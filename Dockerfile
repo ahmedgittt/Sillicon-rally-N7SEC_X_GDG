@@ -1,17 +1,16 @@
-# 1. Dépendances (npm install)
-FROM node:22 AS deps
+FROM node:22
+
 WORKDIR /app
 
 COPY package*.json ./
+
 RUN npm install
 
-# 2. Dev container (utilisé par docker-compose)
-FROM node:22
-WORKDIR /app
-
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-EXPOSE 3000
+RUN npm install -D ts-node typescript @types/node
 
-CMD ["npm", "run", "dev"]
+ENV NODE_ENV=development
+ENV DATABASE_URL=postgres://postgres:password@db:5432/mydatabase
+
+CMD ["npx", "ts-node", "scripts/initDb.ts"]
