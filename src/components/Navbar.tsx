@@ -25,9 +25,7 @@ export const Navbar = () => {
         {/* Left section */}
 
         <div>
-          <Link href="/" className="flex items-center gap-2 mr-20 pr-12">
-            <Image alt="logo" src={"/logo.svg"} width={100} height={100} />
-          </Link>
+    
         </div>
         {/* Center section */}
         {/* <div className="flex items-center justify-center">

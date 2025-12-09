@@ -11,66 +11,13 @@ import type {
 
 export const CHALLENGE_DATA: Challenge[] = [
   {
-    id: "password-master",
-    title: "Moul Cyber",
-    description: "Test your password creation skills against the clock.",
-    instructions:
-      "Your mission is to create 5 strong passwords (strength > 80) in 60 seconds. Each strong password earns you 20 points.",
-  },
-  {
-    id: "phishing-detective",
-    title: "Phishing Detective",
-    description: "Can you spot the fake emails from the real ones?",
-    instructions:
-      'Analyze a series of emails and decide if they are "Safe" or a "Scam". You get +10 for a correct guess and -5 for an incorrect one.',
-  },
-  {
-    id: "secret-message-decoder",
-    title: "Secret Message Decoder",
-    description: "Put on your detective hat and decode these ciphers.",
-    instructions:
-      "Solve 5 different cipher puzzles. You get 20 points for each correct solution. Using a hint will cost you 5 points.",
-  },
-  {
     id: "spot-the-scam",
     title: "Spot the Scam Quiz",
     description: "Real-world scenarios to test your scam awareness.",
     instructions:
       "Answer 15 multiple-choice questions about various real-world security scenarios. Your answers will determine your security personality.",
   },
-  {
-    id: "digital-footprint",
-    title: "Digital Footprint Simulator",
-    description: "See how your online choices impact your privacy.",
-    instructions:
-      "Navigate through a short story and make decisions. Your choices will affect your privacy and security scores, which determine your final points.",
-  },
-  {
-    id: "osint-geoguessr",
-    title: "Khedam fe Telecommunication",
-    description: "Use image clues to find the location.",
-    instructions:
-      "Analyze the image for clues (OSINT) and find the location on the map. The closer you are, the more points you get.",
-  },
-  {
-    id: "social-engineering",
-    title: "Social Engineering Challenge",
-    description: "Navigate tricky social situations and make the right call.",
-    instructions:
-      "Respond to 10 real-world social engineering scenarios. Your choices will determine your score.",
-  },
-  {
-    id: "pacman-challenge",
-    title: "Pacman",
-    description: "PACMAN",
-    instructions: "pacman instructions",
-  },
-  {
-    id: "zip-lookup",
-    title: "Fin mcha Hamid",
-    description: "sift 2m l 90 90 o jawb 3la l2as2ila",
-    instructions: `Kola Zip fih a password khasek tguesseh. Enjoy!!`,
-  },
+ 
 ];
 
 export const OSINT_CHALLENGES: OsintChallenge[] = [
@@ -246,73 +193,257 @@ export const DECODER_PUZZLES: DecoderPuzzle[] = [
 ];
 
 export const SCAM_QUIZ_QUESTIONS: ScamQuizQuestion[] = [
-  {
-    question:
-      "Someone calls you, claiming to be from your bank's IT support. They say there's an issue with your account and ask for your password to fix it. What should you do?",
-    options: [
-      "Give them the password; they're trying to help.",
-      "Hang up and call your bank using the official number on their website.",
-      "Ask them to prove who they are by telling you your account balance.",
-      "Tell them your password but change it right after.",
-    ],
-    answer:
-      "Hang up and call your bank using the official number on their website.",
-    explanation:
-      "Never give your password to anyone over the phone. Legitimate organizations will never ask for it. Always verify by initiating the contact yourself through official channels.",
+   {
+    question: "qs1",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info1",
   },
   {
-    question:
-      "You find a USB drive in the university parking lot labeled 'Finals Answers'. What's the safest course of action?",
-    options: [
-      "Plug it into your personal laptop to see if the files are real.",
-      "Plug it into a university computer to be safe.",
-      "Give it to campus security or the lost and found.",
-      "Wipe the drive and keep it for yourself.",
-    ],
-    answer: "Give it to campus security or the lost and found.",
-    explanation:
-      "This is a classic 'baiting' technique. The drive could contain malware that infects your computer as soon as you plug it in. Never plug in unknown USB drives.",
+    question: "qs2",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info2",
   },
   {
-    question:
-      "You receive an email from your favorite online store with a link for a 90% off flash sale. The link looks like 'www.amaz0n.dealz.com'. What's the biggest red flag?",
-    options: [
-      "The discount is too good to be true.",
-      "The domain name is slightly altered ('amaz0n' with a zero and a '.dealz.com' ending).",
-      "The email wasn't personalized with your name.",
-      "The sale is for a limited time.",
-    ],
-    answer:
-      "The domain name is slightly altered ('amaz0n' with a zero and a '.dealz.com' ending).",
-    explanation:
-      "Typosquatting, or using slightly altered domain names, is a common trick to make a fake website look legitimate. Always check the URL carefully.",
+    question: "qs3",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info3",
   },
   {
-    question:
-      "A friend's social media account, which they haven't used in months, suddenly sends you a message: 'OMG is this you in this video?? [suspicious link]'. What should you do?",
-    options: [
-      "Click the link to see the video.",
-      "Reply and ask them if they really sent it.",
-      "Ignore the message; it's probably spam.",
-      "Contact your friend through a different method (like a text message) to verify.",
-    ],
-    answer:
-      "Contact your friend through a different method (like a text message) to verify.",
-    explanation:
-      "The account has likely been compromised. The message uses a common tactic to trick you into clicking a malicious link. Verify with your friend out-of-band (not on the compromised platform).",
+    question: "qs4",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info4",
   },
-  // Add more questions to reach 15
   {
-    question: "What is 'phishing'?",
-    options: [
-      "A type of computer virus.",
-      "A method of catching fish using technology.",
-      "An attempt to trick someone into revealing sensitive information.",
-      "A secure way to store passwords.",
-    ],
-    answer: "An attempt to trick someone into revealing sensitive information.",
-    explanation:
-      "Phishing uses deceptive emails, messages, or websites to steal personal information like passwords and credit card numbers.",
+    question: "qs5",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info5",
+  },
+  {
+    question: "qs6",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info6",
+  },
+  {
+    question: "qs7",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info7",
+  },
+  {
+    question: "qs8",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info8",
+  },
+  {
+    question: "qs9",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info9",
+  },
+  {
+    question: "qs10",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info10",
+  },
+  {
+    question: "qs11",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info11",
+  },
+  {
+    question: "qs12",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info12",
+  },
+  {
+    question: "qs13",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info13",
+  },
+  {
+    question: "qs14",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info14",
+  },
+  {
+    question: "qs15",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info15",
+  },
+  {
+    question: "qs16",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info16",
+  },
+  {
+    question: "qs17",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info17",
+  },
+  {
+    question: "qs18",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info18",
+  },
+  {
+    question: "qs19",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info19",
+  },
+  {
+    question: "qs20",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info20",
+  },
+  {
+    question: "qs21",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info21",
+  },
+  {
+    question: "qs22",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info22",
+  },
+  {
+    question: "qs23",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info23",
+  },
+  {
+    question: "qs24",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info24",
+  },
+  {
+    question: "qs25",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info25",
+  },
+  {
+    question: "qs26",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info26",
+  },
+  {
+    question: "qs27",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info27",
+  },
+  {
+    question: "qs28",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info28",
+  },
+  {
+    question: "qs29",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info29",
+  },
+  {
+    question: "qs30",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info30",
+  },
+  {
+    question: "qs31",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info31",
+  },
+  {
+    question: "qs32",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info32",
+  },
+  {
+    question: "qs33",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info33",
+  },
+  {
+    question: "qs34",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info34",
+  },
+  {
+    question: "qs35",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info35",
+  },
+  {
+    question: "qs36",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info36",
+  },
+  {
+    question: "qs37",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info37",
+  },
+  {
+    question: "qs38",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info38",
+  },
+  {
+    question: "qs39",
+    options: ["1", "2", "3", "4"],
+    answer: "2",
+    explanation: "info39",
+  },
+  {
+    question: "qs40",
+    options: ["1", "2", "3", "4"],
+    answer: "4",
+    explanation: "info40",
+  },
+  {
+    question: "qs41",
+    options: ["1", "2", "3", "4"],
+    answer: "1",
+    explanation: "info41",
+  },
+  {
+    question: "qs42",
+    options: ["1", "2", "3", "4"],
+    answer: "3",
+    explanation: "info42",
   },
 ];
 
