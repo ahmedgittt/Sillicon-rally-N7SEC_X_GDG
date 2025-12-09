@@ -16,16 +16,19 @@ function parseConnectionConfig() {
     const url = new URL(connectionString);
     console.log("✅ Connecting to database:", url.hostname + ":" + url.port);
 
-    const config = {
-      host: url.hostname,
-      port: parseInt(url.port) || 5432,
-      database: url.pathname.replace(/^\//, "") || "mydatabase",
-      user: url.username,
-      password: url.password || "",
-      max: 10,
-      idleTimeoutMillis: 30000,
-      connectionTimeoutMillis: 10000,
-    };
+   const config = {
+  host: url.hostname,
+  port: parseInt(url.port) || 5432,
+  database: url.pathname.replace(/^\//, "") || "mydatabase",
+  user: url.username,
+  password: url.password || "",
+  max: 10,
+  idleTimeoutMillis: 30000,
+  connectionTimeoutMillis: 10000,
+  ssl: {
+    rejectUnauthorized: false, // required for Vercel Postgres
+  },
+};
 
     console.log("Config:", {
       host: config.host,
